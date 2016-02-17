@@ -1,8 +1,8 @@
-import java.util.Scanner;
+﻿import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);// n行m列
+		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		int m = sc.nextInt();
 		for (int a = 0; a < n; a++) {
