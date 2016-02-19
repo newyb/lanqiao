@@ -1,4 +1,4 @@
-/*
+﻿/*
 问题描述
 求1+2+3+...+n的值。
 输入格式
@@ -20,7 +20,7 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		long n=sc.nextInt();
+		long n=sc.nextInt();//虽然n在int范围内 但最后结果超出了int范围
 		System.out.println(n*(1+n)/2); 
 	}
 }

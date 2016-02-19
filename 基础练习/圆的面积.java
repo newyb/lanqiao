@@ -1,4 +1,4 @@
-/*
+﻿/*
 问题描述
 给定圆的半径r，求圆的面积。
 输入格式
@@ -22,7 +22,7 @@ public class Main
 		Scanner sc=new Scanner(System.in);
 		int r=sc.nextInt();
 		double s=pi*r*r;
-		DecimalFormat df=new DecimalFormat("#.0000000");
+		DecimalFormat df=new DecimalFormat("#.0000000");//格式化
 		System.out.println(df.format(s));
 	}
 

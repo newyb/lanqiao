@@ -1,4 +1,4 @@
-/*
+﻿/*
 问题描述
 Fibonacci数列的递推公式为：Fn=Fn-1+Fn-2，其中F1=F2=1。
 
@@ -28,11 +28,11 @@ public class Main {
 	}
 
 	static int fn(int n) {
-		if (n == 1 || n == 2)
+		if (n == 1 || n == 2)//如果n为1 2时 直接返回1
 			return 1;
-		int a = 1, b = 1, c = 0;
+		int a = 1, b = 1, c = 0;//c Fn a Fn-1 b Fn-2
 		for (int i = 3; i <= n; i++) {
-			c = (a + b) % 10007;
+			c = (a + b) % 10007;//取余 最后取余的话 会超时
 			a = b;
 			b = c;
 		}
