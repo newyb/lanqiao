@@ -6,6 +6,7 @@ Java 语言开发环境：
 ·API 帮助文档（中文，chm格式）
 
 官方 Java编程环境及API帮助文档: [编程环境及API帮助文档.rar](http://static.lanqiao.org/webstatic/document/Java)
+
 可用语言包 http://archive.eclipse.org/technology/babel/update-site/R0.10.1/helios
 打开Eclipse—>Help—>Install New Software…，Work with 复制上面的链接，name随意 等待片刻 选择语言包安装.
 
