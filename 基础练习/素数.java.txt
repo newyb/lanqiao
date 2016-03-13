@@ -19,3 +19,29 @@
 ，ik就是奇数，此时k*k+ik就是个偶数，偶数已经被2删除了，
 所有我们就可以以2k为单位删除步长，依次删除k*k, k*k+2k, k*k+4k, ...。
   */
+
+
+import java.util.*;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		ArrayList sushu = new ArrayList();
+		for (int i = 2; i < b; i++) {
+			boolean flag = true;
+			for (int j = 2; j <=Math.sqrt(i); j++)
+				if (i % j == 0)
+					flag = false;
+			if (flag)
+				sushu.add(i);
+		}
+		System.out.print(sushu.get(0));
+		for(int i=a;i<=b;i++)
+			for(int j=0;j<=sushu.size();j++){
+				int s=Integer.parseInt(sushu.get(j).toString());
+				if(i%s==0)
+					System.out.printf("%dhh%d",i,s);
+	}
+}}
