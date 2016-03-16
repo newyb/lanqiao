@@ -61,3 +61,60 @@ public class Main {
         }  
     }  
 }  
+
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+
+public class Main {
+	/** * @param args */
+	public static void main(String[] args) throws IOException {
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int[] nm = new int[2];
+		String[] s = br.readLine().split(" ");
+		for (int i = 0; i < 2; i++) {
+			nm[i] = Integer.parseInt(s[i]);
+		}
+		int m = nm[0], n = nm[1];
+		int[][] arr = new int[m][n];
+		for (int i = 0; i < m; i++) {
+			String s1 = br.readLine();
+			String[] str = s1.split(" ");
+			for (int j = 0; j < n; j++) {
+				arr[i][j] = Integer.parseInt(str[j]);
+			}
+		}
+		int num = n * m, brr = 0;
+		int i = 0, j = 0, x = 0, y = 0, z = 0;
+		for (int ii = 0; ii < num; ii++) {
+			if (j < n && x < m) {
+				brr = arr[i][j];
+				if (i < m - 1) {
+					i++;
+				}
+				x++;
+			} else if (j < n - 1 && i == m - 1) {
+				j++;
+				y++;
+				brr = arr[i][j];
+			} else if (j == y && i > z) {
+				i--;
+				brr = arr[i][j];
+			} else if (i == z && j > z) {
+				j--;
+				brr = arr[i][j];
+				if (i == z && j == z + 1) {
+					z++;
+					i++;
+					m = m - 1;
+					n = n - 1;
+					x = z;
+					y = z;
+				}
+			}
+			System.out.print(brr + " ");
+		}
+	}
+}
