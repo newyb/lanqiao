@@ -16,6 +16,7 @@
 数据规模与约定
 1 <= n <= 1,000,000,000。
 */
+
 import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {

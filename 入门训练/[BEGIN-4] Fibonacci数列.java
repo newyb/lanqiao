@@ -19,6 +19,7 @@ Fibonacci数列的递推公式为：Fn=Fn-1+Fn-2，其中F1=F2=1。
 数据规模与约定
 1 <= n <= 1,000,000。
 */
+
 import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {

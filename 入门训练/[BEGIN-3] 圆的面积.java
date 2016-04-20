@@ -12,6 +12,7 @@
 数据规模与约定
 1 <= r <= 10000。
 */
+
 import java.util.Scanner;
 import java.text.DecimalFormat;
 public class Main 
