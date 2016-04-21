@@ -1,5 +1,6 @@
 ﻿#其他
-建议您使用大赛指定的编辑环境来编写你的代码，以保证评测时和我们的编译环境一致，同时和比赛时使用的环境也一致。
+
+
 Java 语言开发环境：
 ·JDK 1.6
 ·Eclipse Helios for JavaSE
@@ -15,6 +16,7 @@ Java 语言开发环境：
 两个char间的equals 
 在Switch中可用String 
 支持二进制文字 int binary = 0b1001;
+
 
 ###吐槽：
 官方的编译环境说明：JAVA	Javac 1.6.0_07	javac Main.java
